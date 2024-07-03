@@ -360,6 +360,11 @@ progress::-moz-progress-bar {
     filter: invert(100%);
 }
 
+.cards-container.expertise .card h3 {
+    margin-bottom: 0px;
+}
+
+
 .cards-container.expertise .card p {
     margin-bottom: 0px;
     flex-grow: 1;
