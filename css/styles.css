@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 15px auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#contact, #resume {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-version {
+    text-align: center;
+    color: #fff;
+}
+
+.resume-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.resume-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #222;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.resume-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.resume-links a .icon {
+    margin-right: 10px;
+}
+
+.resume-links a .text {
+    text-decoration: none;
+}
+
+.resume-links a:hover .text {
+    text-decoration: underline;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+progress::-webkit-progress-value {
+    background-color: #329932;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329932;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    #contact, #resume {
+        padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .resume-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#contact .intro {
+    margin-bottom: 10px;
+}
+
+#contact p {
+    margin: 5px 0;
+}
+
+#contact p i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.languages .flag {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.projects .card h3 {
+    margin-bottom: 0px;
+}
+
+.languages .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cards-container.projects .card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.experience-container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.experience-container ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.experience-container ul li {
+    margin-bottom: 10px;
+}
+
+.experience-container .company-logo {
+    width: 170px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#company-name {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.card img[alt="ChatGPT"] {
+    filter: invert(100%);
+}
