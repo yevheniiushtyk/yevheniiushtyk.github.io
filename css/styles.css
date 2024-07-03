@@ -359,3 +359,11 @@ progress::-moz-progress-bar {
 .card img[alt="ChatGPT"] {
     filter: invert(100%);
 }
+
+.cards-container.expertise .card p {
+    margin-bottom: 0px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
