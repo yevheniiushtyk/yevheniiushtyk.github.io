@@ -26,6 +26,8 @@ header .avatar {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 header h1 {
