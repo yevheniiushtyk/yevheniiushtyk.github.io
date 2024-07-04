@@ -361,6 +361,14 @@ progress::-moz-progress-bar {
     padding: 0 10px;
 }
 
+#company-name a {
+    color: #fff;
+}
+
+#company-name i {
+    margin-left: 5px;
+}
+
 .card img[alt="ChatGPT"] {
     filter: invert(100%);
 }
